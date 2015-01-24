@@ -1,0 +1,15 @@
+{
+  "name": "hipchat",
+  "version": "0.0.0",
+  "description": "will it ring the doorbell?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hipchatter": "~0.2.0",
+    "xbmc-notify": "0.0.3"
+  }
+}
