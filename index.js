@@ -6,13 +6,18 @@ var hipchatter = new Hipchatter(config.hipchat.APIKey);
 var xbmc = require('xbmc-notify');
 xbmc.config(config.xbmc);
 
-hipchatter.notify('testing',
+hipchatter.notify(config.hipchat.roomName,
 {
   message: 'Ring Ring Ring',
   color: 'green',
   token: config.hipchat.roomAPIKey
 }, function(err){
-  if (err == null) console.log('Successfully notified the room.');
+  if (err == null) {
+    console.log('Successfully notified the room.')
+  }
+  else{
+    console.log(err);
+  };
 });
 
 

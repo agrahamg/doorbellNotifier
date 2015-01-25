@@ -3,10 +3,16 @@
   "version": "0.0.0",
   "description": "will it ring the doorbell?",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agrahamg/doorbellNotifier.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Andrew Graham"
+  },
   "license": "ISC",
   "dependencies": {
     "hipchatter": "~0.2.0",
