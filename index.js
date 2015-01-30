@@ -1,4 +1,13 @@
-var config = require("./config");
+var program = require('commander');
+
+program
+.version('0.0.1')
+.option('-t, --test', 'run with test config')
+.parse(process.argv);
+
+var config = (program.test)?"testConfig":"config";
+console.log("loading config "+ config+".json")
+config = require("./"+config);
 
 var Hipchatter = require('hipchatter');
 var hipchatter = new Hipchatter(config.hipchat.APIKey);

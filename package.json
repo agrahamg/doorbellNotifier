@@ -17,6 +17,7 @@
   "dependencies": {
     "hipchatter": "~0.2.0",
     "xbmc-notify": "0.0.3",
-    "express": "~4.11.1"
+    "express": "~4.11.1",
+    "commander": "~2.6.0"
   }
 }
